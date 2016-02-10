@@ -1,3 +1,14 @@
+.cover {
+  color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 680px;
+  padding-top: 80px;
+  background: url('/images/splash/rocket-shop.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .panel-title {display: inline;font-weight: bold;}
 .checkbox.pull-right { margin: 0; }
 .pl-ziro { padding-left: 0px; }
