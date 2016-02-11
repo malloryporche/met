@@ -1,4 +1,10 @@
-Products = new Mongo.Collection('products');
+if(Products.find().count() === 0) {
+  _.each(productSeeds, function(product){
+    Products.insert(product);
+    console.log('Inserted ', product.sku)
+  })
+}
+
 
 var productSeeds =  [
   {
@@ -172,16 +178,3 @@ var productSeeds =  [
     }
   }
 ];
-
-Products.featured = function() {
-  var featuredSkus = ['honeymoon-mars', 'johnny-liftoff', 'one-way-reentry'];
-  return _.filter(Products, function(product){
-    return featuredSkus.indexOf(product.sku) > -1;
-  });
-}
-
-Products.findOne = function(args){
-  return _.find(Products, function(product){
-      return product.sku === args.sku;
-    })
-}
