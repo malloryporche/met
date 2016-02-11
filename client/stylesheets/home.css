@@ -118,6 +118,7 @@ div.jumbotron h1 {
   font-weight: lighter;
   text-align: center;
   letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 div.container.welcome {
   margin-top: 80px;
