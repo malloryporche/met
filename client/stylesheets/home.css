@@ -1,9 +1,9 @@
 .cover {
   color: rgb(255, 255, 255);
   position: relative;
-  min-height: 680px;
+  min-height: 1200px;
   padding-top: 80px;
-  background: url('/images/splash/rocket-shop.jpg') no-repeat center center fixed;
+  background: url('/images/splash/rocket-shop.jpg') no-repeat top left fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -111,4 +111,17 @@
 .controls
 {
   margin-top: 20px;
+}
+
+/*WELCOME TEXT*/
+div.jumbotron h1 {
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+div.container.welcome {
+  margin-top: 80px;
+}
+div.container.marketing {
+  margin-bottom: 80px;
 }
