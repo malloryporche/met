@@ -17,6 +17,12 @@
             <li><a href="{{pathFor 'homeContact'}}">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              {{#if isInRole 'admin'}}
+              <a href="#">Admin</a>
+              {{/if}}
+            </li>
+
             {{> loginButtons}}
           </ul>
         </div>
